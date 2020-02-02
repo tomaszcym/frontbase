@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -106,11 +109,46 @@
         </div>
         <div class="col">
             <article class="card h-100">
-                <div class="body d-flex ai-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, aperiam doloremque
+                <div class="body d-flex ai-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+                    aperiam doloremque
                     ea excepturi facere, id libero neque optio porro quibusdam repellendus sapiente tempore. Atque fugit
                     incidunt nam similique sunt, voluptas.
                 </div>
             </article>
+        </div>
+    </div>
+
+
+    <div class="col">
+        <h1>Alerts</h1>
+
+        <div class="alert alert-success alert-toggle">Some info about alert ...</div>
+        <div class="alert alert-warning alert-toggle">Some info about alert ...</div>
+        <div class="alert alert-error alert-toggle">Some info about alert ...</div>
+        <div class="alert alert-info">Some info about alert ...</div>
+    </div>
+
+
+    <div class="col">
+        <h1>Labels</h1>
+        <span class="label label-blue">Blue small simple label</span>
+        <span class="label label-red">Red small simple label</span>
+        <span class="label label-green">Green small simple label</span>
+    </div>
+
+
+    <div class="col">
+        <h1>Modal</h1>
+        <a href="#" class="btn btn-primary-full" onclick="openModal('simple-modal')">Open modal</a>
+        <div id="simple-modal" class="modal">
+            <div class="card">
+                <div class="head">Modal</div>
+                <div class="body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam architecto deleniti
+                    dignissimos distinctio eligendi harum illum inventore, quisquam repellendus tempora vel voluptatibus
+                    voluptatum? Amet beatae cumque modi officiis sequi!
+                </div>
+            </div>
         </div>
     </div>
 
@@ -153,6 +191,9 @@
 
 
 </section>
+
+
+<script src="./js/mybase_js.js"></script>
 
 </body>
 </html>
