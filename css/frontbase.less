@@ -226,10 +226,12 @@
     padding: 12px 15px;
     font-size: 1.15rem;
     box-shadow: @shadow-primary;
+    position: relative;
   }
 
   .body {
     padding: 25px 15px;
+    position: relative;
   }
 
   .footer {
@@ -237,6 +239,7 @@
     padding: 8px 15px;
     font-size: .8rem;
     box-shadow: @shadow-primary;
+    position: relative;
   }
 }
 
@@ -327,6 +330,17 @@
     width: 60%;
     margin-top: 5%;
     margin-bottom: auto;
+  }
+
+  .modal-close-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
   }
 }
 

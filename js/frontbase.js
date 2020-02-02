@@ -7,16 +7,15 @@ $(document).ready(function () {
 
 
     $('.modal').click(function (event) {
-        const modal = $(this);
-        const element = $(event.target).parent();
-        console.log(modal.className);
-        console.log(element);
+        const modal = $(this).children().get(0);
+        const element = $(event.target).parent().get(0);
+        if(modal !== element)
+            $(this).removeClass('active');
     });
 
-
-    // $('.modal .card').click(function () {
-    //     console.log(this);
-    // });
+    $('.modal-close-btn').click(function () {
+        $(this).closest('.modal').removeClass('active');
+    });
 
 });
 
