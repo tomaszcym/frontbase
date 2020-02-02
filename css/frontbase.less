@@ -71,7 +71,8 @@
   padding: 10px;
   border: none;
   box-shadow: @shadow-primary;
-  border-radius: if((@border-radius), 5px, 0);;
+  border-radius: if((@border-radius), 5px, 0);
+  resize: vertical;
 
   &.valid-error {
     border: 1px solid @red;
@@ -99,6 +100,7 @@
   box-shadow: 3px 3px 7px 0 fade(#000, 25%);
   transition: all .2s;
   border-radius: if((@border-radius), 5px, 0);;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 1px 1px 7px 0 fade(#000, 25%);
@@ -249,10 +251,22 @@
 
 // alert
 .alert {
+  position: relative;
   display: block;
   padding: 12px;
   border-radius: if((@border-radius), 5px, 0);
   box-shadow: @shadow-primary;
+
+  .alert-close-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+  }
 
   &.alert-success {
     background: @green;

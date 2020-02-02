@@ -17,6 +17,10 @@ $(document).ready(function () {
         $(this).closest('.modal').removeClass('active');
     });
 
+    $('.alert-close-btn').click(function () {
+        $(this).closest('.alert').fadeOut();
+    });
+
 });
 
 
